@@ -62,12 +62,13 @@ a:hover {
 #main p {
   font-size: 11px;
   line-height: 2;
+  text-align: left;
 }
 
 #logo {
 	height: 114px;
 	width: 114px;
-  margin: 15px auto auto 15px;
+  margin: 15px auto;
   background: url("logo.png") no-repeat;
   text-indent: -99999px;
 }
