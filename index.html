@@ -1,149 +1,272 @@
-<!DOCTYPE html>
 
-<html>
-  <head>
-    <title>Jeppe Jensen</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="assets/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/grid.css">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+<!doctype html>
+<!--[if lt IE 7]><html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" class="no-js"><!--<![endif]-->
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Hi, I&#039;m Jeppe Hirschberg Jensen - UX Designer</title>
+		
+		<!-- Google Chrome Frame for IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		
+		<!-- mobile meta (hooray!) -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<!-- icons & favicons (for more: http://themble.com/support/adding-icons-favicons/) -->
+		<link rel="shortcut icon" href="http://files.jeppejensen.dk/static/wp-content/themes/eddiemachado-bones-3027a44/favicon.ico">
+		<!-- iPhone 4-->
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://files.jeppejensen.dk/static/wp-content/themes/eddiemachado-bones-3027a44/library/images/icons/h/apple-touch-icon.png">
+		<!-- For iPad 1-->
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://files.jeppejensen.dk/static/wp-content/themes/eddiemachado-bones-3027a44/library/images/icons/m/apple-touch-icon.png">
+		<!-- For iPhone 3G, iPod Touch and Android -->
+		<link rel="apple-touch-icon-precomposed" href="http://files.jeppejensen.dk/static/wp-content/themes/eddiemachado-bones-3027a44/library/images/icons/l/apple-touch-icon.png">
+		<!-- For Nokia -->
+		<link rel="shortcut icon" href="http://files.jeppejensen.dk/static/wp-content/themes/eddiemachado-bones-3027a44/library/images/icons/l/apple-touch-icon.png">
+				
+  		<link rel="pingback" href="http://jeppejensen.dk/xmlrpc.php">
+
+		<meta name="google-site-verification" content="3xvzskNGKXkde3ZP74juThsRL8VwZNGJtZ6GFjOj3d4" />
+		<meta property="fb:admins" content="121400574" />
+		<meta property="twitter:account_id" content="5734942" />
+
+		<!-- js -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!--
+<script src="http://files.jeppejensen.dk/static/wp-content/themes/eddiemachado-bones-3027a44/library/js/libs/jquery.stellar.min.js"></script>
+		<script src="http://files.jeppejensen.dk/static/wp-content/themes/eddiemachado-bones-3027a44/library/js/libs/TweenMax.min.js"></script>
+		<script src="http://files.jeppejensen.dk/static/wp-content/themes/eddiemachado-bones-3027a44/library/js/libs/jquery.easing.1.3.js"></script>	
+		<script src="http://files.jeppejensen.dk/static/wp-content/themes/eddiemachado-bones-3027a44/library/js/libs/jquery.touchSwipe.min.js"></script>
+-->
+		<!-- js -->
+		<!-- maps -->
+		
+		<script type="text/javascript"
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARdZqKCwOxQq4d_C7XHDC7FZXjjF_u1SM&sensor=false">
+      	</script>
+      	<!-- <script src="http://files.jeppejensen.dk/static/wp-content/themes/eddiemachado-bones-3027a44/library/js/libs/infobox.js" type="text/javascript"></script> -->
+      	<script src="http://files.jeppejensen.dk/static/wp-content/themes/eddiemachado-bones-3027a44/library/js/libs/infobubble.js" type="text/javascript"></script>
+      	<script type="text/javascript" async="async">
+      	function initialize() {
+	      	var myCenter = new google.maps.LatLng(53.852527,1.713867);
+	      	var markerHomeLL = new google.maps.LatLng(50.37546,-4.14266);
+		    var boxText = document.createElement("div");
+	        /*boxText.style.cssText = "border: 0; background: #fff; padding: 5px;";*/
+	        boxText.innerHTML = '<img src="https://lh4.googleusercontent.com/-oga_95cqywA/AAAAAAAAAAI/AAAAAAAAABU/yzH3CKoOSQU/s240-c/photo.jpg" height="120" width="120">';
+		    var markerCPHLL = new google.maps.LatLng(55.67610, 12.56834);
+	      	var myStyles = [
+							  {
+							    "featureType": "water",
+							    "stylers": [
+							      { "color": "#043c5d" },
+							      /* { "lightness": -10 } */
+							    ]
+							  },{
+							  }
+							];
+			
+	        var mapOptions = {
+	          center: myCenter,
+	          zoom: 4,
+	          disableDefaultUI: true,
+	          scrollwheel: false,
+	          zoomControl: true,
+	          mapTypeId: google.maps.MapTypeId.TERRAIN,
+			  styles: myStyles
+	        };
+	        var map = new google.maps.Map(document.getElementById("map-canvas"),
+	            mapOptions);
+	        var markerCPH = new google.maps.Marker({
+	            position: markerCPHLL,
+	            map: map,
+	            visible: false
+	        });
+	        var infowindowHome = {
+		        content: boxText,
+		        position: markerHomeLL,
+		        shadowStyle: 0,
+                padding: 5,
+                borderWidth: 0,
+                minHeight: 120,
+                maxHeight: 120,
+                borderRadius: 2,
+                disableAutoPan: true
+		    };
+			var ib = new InfoBubble(infowindowHome);
+			ib.hideCloseButton();
+			ib.open(map);
+	      }
+	      google.maps.event.addDomListener(window, 'load', initialize);
+	    </script>
+		<!-- maps -->
+		
+		<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Merriweather|Open+Sans:800,700,400' rel='stylesheet' type='text/css'>
+		<!-- Fonts -->
+		
+		<!-- wordpress head functions -->
+		
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.2.2 - http://yoast.com/wordpress/seo/ -->
+<link rel="canonical" href="http://jeppejensen.dk" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Jeppe Hirschberg Jensen &raquo; Feed" href="http://jeppejensen.dk/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Jeppe Hirschberg Jensen &raquo; Comments Feed" href="http://jeppejensen.dk/comments/feed/" />
+
+            <script type="text/javascript">//<![CDATA[
+            // Google Analytics for WordPress by Yoast v4.3.5 | http://yoast.com/wordpress/google-analytics/
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1529368-1']);
+				            _gaq.push(['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            //]]></script>
+			<link rel="alternate" type="application/rss+xml" title="Jeppe Hirschberg Jensen &raquo; Jeppe Hirschberg Jensen Comments Feed" href="http://jeppejensen.dk/hi-im-jeppe/feed/" />
+<link rel='stylesheet' id='bones-stylesheet-css'  href='http://files.jeppejensen.dk/static/wp-content/themes/eddiemachado-bones-3027a44/library/css/style.css?ver=3.8.1' type='text/css' media='all' />
+<!--[if lte IE 9]>
+<link rel='stylesheet' id='bones-ie-only-css'  href='http://files.jeppejensen.dk/static/wp-content/themes/eddiemachado-bones-3027a44/library/css/ie.css?ver=3.8.1' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://files.jeppejensen.dk/static/wp-content/themes/eddiemachado-bones-3027a44/library/js/libs/modernizr.custom.min.js?ver=2.5.3'></script>
+<script type='text/javascript' src='http://files.jeppejensen.dk/static/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://files.jeppejensen.dk/static/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel='shortlink' href='http://jeppejensen.dk/?p=402' />
+		<!-- end of wordpress head -->
+			
+		<!-- drop Google Analytics Here -->
+		<!-- end analytics -->
+		
+	</head>
+	
+	<body class="home page page-id-402 page-template page-template-page-jeppe-php">
+	
+		<div id="container">
+			
+			<header class="header" role="banner">
+			
+				<div id="inner-header" class="wrap clearfix">
+					
+					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
+					<!--<p id="logo" class="h1"><a href="http://jeppejensen.dk" rel="nofollow">Jeppe Hirschberg Jensen</a></p> -->
+					
+					<!-- if you'd like to use the site description you can un-comment it below -->
+										
+					
+					<nav role="navigation">
+											</nav>
+				
+				</div> <!-- end #inner-header -->
+			
+			</header> <!-- end header -->			<div id="hcard-Jeppe-Jensen" class="vcard">
+			<div id="content" class="content-a">
+			
+				<div id="inner-content" class="wrap clearfix">
+			
+				    <div id="main" class="twelvecol first clearfix" role="main">
+					    
+					    					
+					
+
+					    <article id="post-402" class="post-402 page type-page status-publish hentry clearfix" role="article">
+						
+						    <header class="article-header">
+							
+							
+
+							    <!-- <h1 class="page-title fn"><a class="url uid" href="http://jeppejensen.dk" rel="me, nofollow" >Jeppe Hirschberg Jensen</a></h1> -->
+							
+							    <!-- <p class="meta">Posted <time datetime="2012-08-8" pubdate>August 8th, 2012</time> by <a href="http://jeppejensen.dk/blog/author/jeppe/" title="Posts by Jeppe" rel="author">Jeppe</a>.</p> -->
+						
+						    </header> <!-- end article header -->
+					
+						    
+						    <section class="post-content">
+							    <h1 itemscope itemtype="http://schema.org/Person">Hello, my name is <a class="fn url uid" itemprop="name url" href="http://jeppejensen.dk"  rel="me author">Jeppe Hirschberg Jensen</a>. I am a <a class="title url" itemprop="jobTitle url" href="http://www.linkedin.com/in/jeppejensen" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.linkedin.com/in/jeppejensen']);" target="_blank">UX, UI and web designer</a> from <span itemprop="nationality" itemscope itemtype="http://schema.org/Country"><span itemprop="name">Denmark</span></span>, now living with my lovely, little family in <span class="adr" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span class="region" itemprop="addressRegion">Devon</span>, <span class="country-name" itemprop="addressCountry" itemscope itemtype="http://schema.org/Country"><span itemprop="name">UK</span></span></span></h1>
+						    </section>
+						    <!-- end article section -->
+						
+						    
+							    <footer class="article-footer">
+			
+							    <p class="clearfix"></p>
+							
+						    </footer>
+						    <!-- end article footer -->
+						    
+						    
+					
+					    </article> <!-- end article -->
+					
+					    	
+					
+					    				    </div> <!-- end #main -->
     
-    <script type="text/javascript" src="assets/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="assets/strftime.js"></script>
-    <script type="text/javascript">
-    (function ($, undefined) {
+				    				<div id="sidebar1" class="sidebar fourcol last clearfix" role="complementary">
 
-      // Put custom repo URL's in this object, keyed by repo name.
-      var repoUrls = {
-      };
+					
+						<!-- This content shows up if there are no widgets defined in the backend. -->
+						
+						<!--
+<div class="alert help">
+							<p>Please activate some Widgets.</p>
+						</div>
+-->
 
-      function repoUrl(repo) {
-        return repoUrls[repo.name] || repo.html_url;
-      }
+					
+				</div>				    
+				</div> <!-- end #inner-content -->
+    
+			</div> <!-- end #content -->
+			</div> <!-- end hcard -->
+			
 
-      // Put custom repo descriptions in this object, keyed by repo name.
-      var repoDescriptions = {
-      };
+			<footer class="footer" role="contentinfo">
+			
+				<div id="inner-footer" class="wrap clearfix">
+					
+									<div id="footerbar" class="footerbar first twelvecol clearfix" role="complementary">
 
-      function repoDescription(repo) {
-        return repoDescriptions[repo.name] || repo.description;
-      }
+					
+						<div id="linkcat-12" class="widget widget_links"><h4 class="widgettitle">Find me here</h4>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.linkedin.com/in/jeppejensen" rel="me" title="LinkedIn &#8211; Jeppe Hirschberg Jensen" target="_blank" onclick="javascript:_gaq.push(['_trackEvent','outbound-blogroll','http://www.linkedin.com/in/jeppejensen']);">/in/jeppejensen</a></li>
+<li><a href="http://www.facebook.com/jeppehirschbergjensen" rel="me" title="Facebook &#8211; Jeppe Hirschberg Jensen" target="_blank" onclick="javascript:_gaq.push(['_trackEvent','outbound-blogroll','http://www.facebook.com/jeppehirschbergjensen']);">/jeppehirschbergjensen</a></li>
+<li><a href="http://twitter.com/jeppehjensen" rel="me" title="Twitter &#8211; Jeppe Hirschberg Jensen" target="_blank" onclick="javascript:_gaq.push(['_trackEvent','outbound-blogroll','http://twitter.com/jeppehjensen']);">@jeppehjensen</a></li>
+<li><a href="https://plus.google.com/+JeppeHirschbergJensen/posts?rel=author" rel="me" title="Google + &#8211; Jeppe Hirschberg Jensen" target="_blank" onclick="javascript:_gaq.push(['_trackEvent','outbound-blogroll','https://plus.google.com/+JeppeHirschbergJensen/posts?rel=author']);">+JeppeHirschbergJensen</a></li>
 
-      function addRecentlyUpdatedRepo(repo) {
-        var $item = $("<li>");
+	</ul>
+</div>
 
-        var $name = $("<a>").attr("href", repo.html_url).text(repo.name);
-        $item.append($("<span>").addClass("name").append($name));
+					
+				</div>					
+					<nav role="navigation">
+    						                </nav>
+	                		
+					<!-- <p class="attribution">&copy; 2014 Jeppe Hirschberg Jensen.</p> -->
+				
+				</div> <!-- end #inner-footer -->
+				
+			</footer> <!-- end footer -->
+		
+		</div> <!-- end #container -->
+		
+		<script type='text/javascript' src='http://files.jeppejensen.dk/static/wp-content/themes/eddiemachado-bones-3027a44/library/js/scripts.js?ver=3.8.1'></script>
 
-        var $time = $("<a>").attr("href", repo.html_url + "/commits").text(strftime("%h %e, %Y", repo.pushed_at));
-        $item.append($("<span>").addClass("time").append($time));
+	</body>
 
-        $item.append('<span class="bullet">&sdot;</span>');
+</html> <!-- end page. what a ride! -->
+<!-- Dynamic page generated in 0.587 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-03-29 16:06:48 -->
 
-        var $watchers = $("<a>").attr("href", repo.html_url + "/watchers").text(repo.watchers + " stargazers");
-        $item.append($("<span>").addClass("watchers").append($watchers));
-
-        $item.append('<span class="bullet">&sdot;</span>');
-
-        var $forks = $("<a>").attr("href", repo.html_url + "/network").text(repo.forks + " forks");
-        $item.append($("<span>").addClass("forks").append($forks));
-
-        $item.appendTo("#recently-updated-repos");
-      }
-
-      function addRepo(repo) {
-        var $item = $("<li>").addClass("repo grid-1 " + (repo.language || '').toLowerCase());
-        var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
-        if (repo.fork) {
-          $link.append($('<h2 class="fork">').text(repo.name));
-        } else {
-          $link.append($("<h2>").text(repo.name));
-        }        
-        $link.append($("<h3>").text((repo.language || "") + " (" + repo.watchers + " stargazers)"));
-        $link.append($("<p>").text(repoDescription(repo)));
-        $item.appendTo("#repos");
-      }
-
-      $.getJSON("https://api.github.com/users/jeppejensen/repos?callback=?&per_page=100", function (result) {
-        var repos = result.data;
-
-        $(function () {
-          $("#num-repos").text(repos.length);
-
-          // Convert pushed_at to Date.
-          $.each(repos, function (i, repo) {
-            repo.pushed_at = new Date(repo.pushed_at);
-
-            var weekHalfLife  = 1.146 * Math.pow(10, -9);
-
-            var pushDelta    = (new Date) - Date.parse(repo.pushed_at);
-            var createdDelta = (new Date) - Date.parse(repo.created_at);
-
-            var weightForPush = 1;
-            var weightForWatchers = 1.314 * Math.pow(10, 7);
-
-            repo.hotness = weightForPush * Math.pow(Math.E, -1 * weekHalfLife * pushDelta);
-            repo.hotness += weightForWatchers * repo.watchers / createdDelta;
-          });
-
-          // Sort by highest # of watchers.
-          repos.sort(function (a, b) {
-            if (a.hotness < b.hotness) return 1;
-            if (b.hotness < a.hotness) return -1;
-            return 0;
-          });
-
-          $.each(repos, function (i, repo) {
-            addRepo(repo);
-          });
-
-          // Sort by most-recently pushed to.
-          repos.sort(function (a, b) {
-            if (a.pushed_at < b.pushed_at) return 1;
-            if (b.pushed_at < a.pushed_at) return -1;
-            return 0;
-          });
-
-          $.each(repos.slice(0, 4), function (i, repo) {
-            addRecentlyUpdatedRepo(repo);
-          });
-        });
-      });
-    })(jQuery);
-    </script>
-    <script type="text/javascript">
-    </script>
-  </head>
-  <body>
-
-      
-    <div id="wrapper" class="grid clearfix">
-      <div id="main" class="grid-1">
-        <div id="logo"> </div>
-        <h1>Jeppe Jensen</h1>
-        	<p>
-            <a href="http://jeppejensen.dk">jeppejensen.dk</a>
-          </p>
-          <p>
-            This page is generated with a fork of twitter/twitter.github.com
-          </p>
-      </div>
-
-      <div class="grid grid-3">
-        <div id="statistics" class="grid-1 alpha header">
-          <h1>Statistics</h1>
-          <p>
-            <a href="https://github.com/jeppejensen/repositories"><span id="num-repos">&nbsp;</span> public repositories</a>
-          </p>
-        </div>
-
-        <div id="recently-updated" class="grid-2 omega header">
-          <h1>Recently updated <a href="https://github.com/jeppejensen/repositories">View All on GitHub</a></h1>
-          <ol id="recently-updated-repos"></ol>
-        </div>
-      </div>
-
-      <ol id="repos"></ol>
-    </div>
-  </body>
-</html>
+<!-- super cache -->
