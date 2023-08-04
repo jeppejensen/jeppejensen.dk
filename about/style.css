@@ -562,7 +562,7 @@ TYPOGRAPHY
 */
 @font-face {
   font-family: 'Socialico';
-  src: url('/Socialico.ttf') format('truetype');
+  src: url('Socialico.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
