@@ -1,2 +1,2 @@
-Hello there :wave:  
-This domain is only used for emails so there's nothing to see here.
+Hi there! :wave:
+You've reached jeppejensen.dk, which is only used for email. There's no website content here—thanks for stopping by!
