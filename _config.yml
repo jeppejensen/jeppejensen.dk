@@ -8,3 +8,5 @@ show_downloads: false
 google_analytics: false
 plugins:
   - jemoji
+seo:
+  type: Person
