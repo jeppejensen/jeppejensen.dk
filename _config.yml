@@ -9,6 +9,7 @@ show_downloads: false
 google_analytics: false
 plugins:
   - jemoji
+  - jekyll-seo-tag
 seo:
   type: Person
 social:
