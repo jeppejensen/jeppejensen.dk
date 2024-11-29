@@ -2,11 +2,15 @@ author:
   name: Jeppe Hirschberg Jensen
   url: https://jeppejensen.dk/
 title: Jeppe Jensen
-logo: 
-description: Hi there!
+logo:
+tagline: Hi there!
+description: Hello, my name is Jeppe Hirschberg Jensen. I am a Digital Advisor with a background as a UX Designer, Product Manager and Data Strategist from Denmark, now living with my lovely, ~~little~~ ~~not-so-little~~ rather big family in ~~Devon, UK~~ Copenhagen, Denmark again
 show_downloads: false
 google_analytics: false
 plugins:
   - jemoji
 seo:
   type: Person
+social:
+  links:
+    - https://www.linkedin.com/in/jeppehjensen/
