@@ -1,16 +1,11 @@
 author:
   type: Person
   name: Jeppe Hirschberg Jensen
-  alternateName: Jeppe H. Jensen
   url: https://jeppejensen.dk/
-  jobTitle: Digital Advisor
-  nationality: Denmark
-  address:
-    - addressLocality: Copenhagen
 social:
   links:
     - https://www.linkedin.com/in/jeppehjensen/
-title: Jeppe H. Jensen
+title: jeppejensen.dk
 tagline: Hi there!
 description: I'm Jeppe Hirschberg Jensen, a Digital Advisor with experience as a UX Designer, Product Manager, and Data Strategist. I live in Copenhagen, Denmark, with my amazing (and quite large) family
 logo:
