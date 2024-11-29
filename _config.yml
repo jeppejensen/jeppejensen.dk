@@ -11,6 +11,7 @@ description: I'm Jeppe Hirschberg Jensen, a Digital Advisor with experience as a
 logo:
 show_downloads: false
 google_analytics: false
+remote_theme: dringtech/jekyll-theme-barebones
 plugins:
   - jemoji
   - jekyll-seo-tag
