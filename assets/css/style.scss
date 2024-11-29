@@ -2,4 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
-background-color: #f1f0ee;
+
+body {
+  background-color: #f1f0ee;
+}
