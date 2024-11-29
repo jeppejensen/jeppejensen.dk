@@ -3,6 +3,5 @@ logo:
 description: Hi there!
 show_downloads: false
 google_analytics: false
-theme: jekyll-theme-minimal
 plugins:
   - jemoji
