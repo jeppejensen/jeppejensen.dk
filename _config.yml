@@ -1,6 +1,13 @@
 author:
   name: Jeppe Hirschberg Jensen
   url: https://jeppejensen.dk/
+  type: Person
+  links:
+    - https://www.linkedin.com/in/jeppehjensen/
+  jobTitle: Digital Advisor
+  nationality: Denmark
+  address:
+    - addressLocality: Copenhagen
 title: Jeppe H. Jensen
 logo:
 tagline: Hi there!
@@ -10,12 +17,3 @@ google_analytics: false
 plugins:
   - jemoji
   - jekyll-seo-tag
-seo:
-  name: Jeppe Hirschberg Jensen
-  type: Person
-  links:
-    - https://www.linkedin.com/in/jeppehjensen/
-  jobTitle: Digital Advisor
-  nationality: Denmark
-  address:
-    - addressLocality: Copenhagen
