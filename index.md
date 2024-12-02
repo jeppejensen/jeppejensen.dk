@@ -1,4 +1,5 @@
 ---
+layout: home
 ---
 Hi there! :wave:
 
